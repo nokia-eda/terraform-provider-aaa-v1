@@ -1,0 +1,134 @@
+provider:
+  name: aaa
+
+data_sources:
+  app_group:
+    read:
+      path: /apps/aaa.eda.nokia.com
+      method: GET
+
+  authentication_policy:
+    read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicies/{name}
+      method: GET
+
+  authentication_policy_list:
+    read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicies
+      method: GET
+
+  authentication_policy_state:
+    read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicystates/{name}
+      method: GET
+
+  authentication_policy_state_list:
+    read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicystates
+      method: GET
+
+  node_group:
+    read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/nodegroups/{name}
+      method: GET
+
+  node_group_list:
+    read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/nodegroups
+      method: GET
+
+  resource_list:
+    read:
+      path: /apps/aaa.eda.nokia.com/v1
+      method: GET
+
+  server_group:
+    read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroups/{name}
+      method: GET
+
+  server_group_list:
+    read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroups
+      method: GET
+
+  server_group_state:
+    read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroupstates/{name}
+      method: GET
+
+  server_group_state_list:
+    read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroupstates
+      method: GET
+
+resources:
+  authentication_policy:
+    create:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicies
+      method: POST
+    read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicies/{name}
+      method: GET
+    update:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicies/{name}
+      method: PUT
+    delete:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicies/{name}
+      method: DELETE
+
+  authentication_policy_state:
+    create:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicystates
+      method: POST
+    read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicystates/{name}
+      method: GET
+    update:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicystates/{name}
+      method: PUT
+    delete:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicystates/{name}
+      method: DELETE
+
+  node_group:
+    create:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/nodegroups
+      method: POST
+    read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/nodegroups/{name}
+      method: GET
+    update:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/nodegroups/{name}
+      method: PUT
+    delete:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/nodegroups/{name}
+      method: DELETE
+
+  server_group:
+    create:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroups
+      method: POST
+    read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroups/{name}
+      method: GET
+    update:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroups/{name}
+      method: PUT
+    delete:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroups/{name}
+      method: DELETE
+
+  server_group_state:
+    create:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroupstates
+      method: POST
+    read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroupstates/{name}
+      method: GET
+    update:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroupstates/{name}
+      method: PUT
+    delete:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroupstates/{name}
+      method: DELETE

@@ -1,0 +1,296 @@
+app_group:
+  - read:
+      path: /apps/aaa.eda.nokia.com
+      method: GET
+
+intent_targets:
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicies/{name}/_targets
+      method: GET
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicystates/{name}/_targets
+      method: GET
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/nodegroups/{name}/_targets
+      method: GET
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroups/{name}/_targets
+      method: GET
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroupstates/{name}/_targets
+      method: GET
+
+k8_s_topology_request:
+  - create:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicies/{name}/_topology
+      method: POST
+  - create:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicystates/{name}/_topology
+      method: POST
+  - create:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/nodegroups/{name}/_topology
+      method: POST
+  - create:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroups/{name}/_topology
+      method: POST
+  - create:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroupstates/{name}/_topology
+      method: POST
+
+resource_history:
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicies/{name}/_revs
+      method: GET
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicystates/{name}/_revs
+      method: GET
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/nodegroups/{name}/_revs
+      method: GET
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroups/{name}/_revs
+      method: GET
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroupstates/{name}/_revs
+      method: GET
+
+resource_list:
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1
+      method: GET
+
+status:
+  - delete:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicies/{name}
+      method: DELETE
+  - delete:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicystates/{name}
+      method: DELETE
+  - delete:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/nodegroups/{name}
+      method: DELETE
+  - delete:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroups/{name}
+      method: DELETE
+  - delete:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroupstates/{name}
+      method: DELETE
+
+ui_result:
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/_ui/{pathname}
+      method: GET
+
+com.nokia.eda.aaa.v1.authentication_policy:
+  - create:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicies
+      method: POST
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicies/{name}
+      method: GET
+  - update:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicies/{name}
+      method: PUT
+  - update:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicies/{name}
+      method: PATCH
+
+com.nokia.eda.aaa.v1.authentication_policy_list:
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/authenticationpolicies
+      method: GET
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicies
+      method: GET
+  - delete:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicies
+      method: DELETE
+
+com.nokia.eda.aaa.v1.authentication_policy_state:
+  - create:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicystates
+      method: POST
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicystates/{name}
+      method: GET
+  - update:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicystates/{name}
+      method: PUT
+  - update:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicystates/{name}
+      method: PATCH
+
+com.nokia.eda.aaa.v1.authentication_policy_state_list:
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/authenticationpolicystates
+      method: GET
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicystates
+      method: GET
+  - delete:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicystates
+      method: DELETE
+
+com.nokia.eda.aaa.v1.authentication_policy_state_deleted_resources:
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicystates/_deleted
+      method: GET
+
+com.nokia.eda.aaa.v1.authentication_policy_deleted_resources:
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/authenticationpolicies/_deleted
+      method: GET
+
+com.nokia.eda.aaa.v1.node_group:
+  - create:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/nodegroups
+      method: POST
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/nodegroups/{name}
+      method: GET
+  - update:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/nodegroups/{name}
+      method: PUT
+  - update:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/nodegroups/{name}
+      method: PATCH
+
+com.nokia.eda.aaa.v1.node_group_list:
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/nodegroups
+      method: GET
+  - delete:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/nodegroups
+      method: DELETE
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/nodegroups
+      method: GET
+
+com.nokia.eda.aaa.v1.node_group_deleted_resources:
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/nodegroups/_deleted
+      method: GET
+
+com.nokia.eda.aaa.v1.server_group:
+  - create:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroups
+      method: POST
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroups/{name}
+      method: GET
+  - update:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroups/{name}
+      method: PUT
+  - update:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroups/{name}
+      method: PATCH
+
+com.nokia.eda.aaa.v1.server_group_list:
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroups
+      method: GET
+  - delete:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroups
+      method: DELETE
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/servergroups
+      method: GET
+
+com.nokia.eda.aaa.v1.server_group_state:
+  - create:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroupstates
+      method: POST
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroupstates/{name}
+      method: GET
+  - update:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroupstates/{name}
+      method: PUT
+  - update:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroupstates/{name}
+      method: PATCH
+
+com.nokia.eda.aaa.v1.server_group_state_list:
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroupstates
+      method: GET
+  - delete:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroupstates
+      method: DELETE
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/servergroupstates
+      method: GET
+
+com.nokia.eda.aaa.v1.server_group_state_deleted_resources:
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroupstates/_deleted
+      method: GET
+
+com.nokia.eda.aaa.v1.server_group_deleted_resources:
+  - read:
+      path: /apps/aaa.eda.nokia.com/v1/namespaces/{namespace}/servergroups/_deleted
+      method: GET
+
+totalPaths: 38
+totalSchemas: 80
+usedSchemas: 22
+unusedSchemas: 58
+unusedSchemaList:
+  - AppGroupVersion
+  - ErrorResponse
+  - IntentTarget
+  - K8SPatchOp
+  - OverlayState
+  - Patch
+  - Resource
+  - ResourceHistoryEntry
+  - ResourceTopology
+  - StatusDetails
+  - TopoAttrMetadata
+  - TopoAttribute
+  - TopoBoolExpression
+  - TopoBoolLiteral
+  - TopoElemMetadata
+  - TopoEndpointBoolExpression
+  - TopoField
+  - TopoFixedBoolExpression
+  - TopoLabelSelector
+  - TopoLiteralStatusOrBadge
+  - TopoLiteralValue
+  - TopoLogicalExpression
+  - TopoNodeGrouping
+  - TopoOverlayEndpoint
+  - TopoOverlayEndpointState
+  - TopoOverlayLink
+  - TopoOverlayLinkGroup
+  - TopoOverlayLinkGroupEndpoint
+  - TopoOverlayLinkState
+  - TopoOverlayNode
+  - TopoOverlayNodeOrGroup
+  - TopoOverlayNodeState
+  - TopoOverlayValue
+  - TopoSchema
+  - TopoStateFilter
+  - TopoValue
+  - TopoValueExpression
+  - Topology
+  - com.nokia.eda.aaa.v1.AuthenticationPolicyState_DeletedResourceEntry
+  - com.nokia.eda.aaa.v1.AuthenticationPolicyState_alarms
+  - com.nokia.eda.aaa.v1.AuthenticationPolicyState_deviations
+  - com.nokia.eda.aaa.v1.AuthenticationPolicyState_metadata
+  - com.nokia.eda.aaa.v1.AuthenticationPolicy_DeletedResourceEntry
+  - com.nokia.eda.aaa.v1.AuthenticationPolicy_alarms
+  - com.nokia.eda.aaa.v1.AuthenticationPolicy_deviations
+  - com.nokia.eda.aaa.v1.AuthenticationPolicy_metadata
+  - com.nokia.eda.aaa.v1.NodeGroup_DeletedResourceEntry
+  - com.nokia.eda.aaa.v1.NodeGroup_alarms
+  - com.nokia.eda.aaa.v1.NodeGroup_deviations
+  - com.nokia.eda.aaa.v1.NodeGroup_metadata
+  - com.nokia.eda.aaa.v1.ServerGroupState_DeletedResourceEntry
+  - com.nokia.eda.aaa.v1.ServerGroupState_alarms
+  - com.nokia.eda.aaa.v1.ServerGroupState_deviations
+  - com.nokia.eda.aaa.v1.ServerGroupState_metadata
+  - com.nokia.eda.aaa.v1.ServerGroup_DeletedResourceEntry
+  - com.nokia.eda.aaa.v1.ServerGroup_alarms
+  - com.nokia.eda.aaa.v1.ServerGroup_deviations
+  - com.nokia.eda.aaa.v1.ServerGroup_metadata
